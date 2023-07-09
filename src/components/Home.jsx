@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './style.css'
 import parachutePhoto from '../assets/minh-pham-IisDPFNUS4k-unsplash.jpg';
 
