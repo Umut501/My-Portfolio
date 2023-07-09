@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import MyPhoto from '../assets/myImg.png';
+import React from 'react';
 import './style.css'
 
 const About = () => {

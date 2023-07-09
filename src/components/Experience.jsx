@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-import bgphoto from '../assets/bgfor.jpg';
 
 const Experience = () => {
   return (
