@@ -1,0 +1,127 @@
+.unselectable {
+    user-select: none;
+  }
+
+  .circle-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white; /* Set your desired background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle-text {
+    transform: rotate(-90deg);
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+.glassy{
+background: rgba(79, 77, 77, 0.2);
+border-radius: 16px;
+padding:1%;
+
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(40px);}
+
+.fade-down {
+  animation: fadeDown 2s ease-in-out forwards;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+  .photo-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 2rem; /* Adjust the gap between photo pieces as desired */
+    transform: rotate(-2deg); /* Rotate the entire container to create diagonal lines effect */
+    overflow: hidden; /* Hide overflowing photo pieces outside the container */
+  }
+
+  .photo-piece {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .photo-piece::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background-image: linear-gradient(to bottom right, #000000, transparent);
+    transform: rotate(-5deg); /* Adjust the angle of the diagonal lines */
+    z-index: 1;
+  }
+
+  .photo-piece img {
+    width: 100%;
+    display: block;
+    z-index: 2;
+  }
+  .backg_property {
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+  .parallax img {
+  position: absolute;
+  pointer-events: none;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container img {
+  width: 64px; /* Adjust the width as needed */
+  height: 64px; /* Adjust the height as needed */
+}
+
+.icon-container span {
+  margin-top: 8px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  text-align: center;
+}
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap as needed */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.footer-container {
+  background-color: #EBEFF0;
+  padding: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+
+.footer-text {
+  font-size: 20px;
+  color: #383838;
+}
