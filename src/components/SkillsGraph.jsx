@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-import node from '../assets/node.png';
 import sql from '../assets/Postgresql.svg';
 import java from '../assets/Java_logo_PNG7.png';
 import csharp from '../assets/Logo_C_sharp.svg';
@@ -32,10 +31,6 @@ const SkillsGraph = () => {
           <img src={java} alt="Java" />
           <span>Java</span>
         </div>
-        {/* <div className="icon-container">
-          <img src={node} alt="JavaScript" />
-          <span>Node.js</span>
-        </div> */}
         <div className="icon-container">
           <img src={csharp} alt="C#" />
           <span>C#</span>
