@@ -3,7 +3,7 @@ import './style.css';
 import node from '../assets/node.png';
 import sql from '../assets/Postgresql.svg';
 import java from '../assets/Java_logo_PNG7.png';
-import cpp from '../assets/ISO_C++_Logo.svg';
+import csharp from '../assets/csharp.png';
 import css from '../assets/css.png';
 import html from '../assets/html.png';
 import react from '../assets/react.png';
@@ -37,7 +37,7 @@ const SkillsGraph = () => {
           <span>Node.js</span>
         </div>
         <div className="icon-container">
-          <img src={cpp} alt="C++" />
+          <img src={csharp} alt="C#" />
           <span>C++</span>
         </div>
         <div className="icon-container">
