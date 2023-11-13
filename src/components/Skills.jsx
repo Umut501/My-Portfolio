@@ -19,7 +19,7 @@ const Skills = () =>  {
         <div className="text-lg text-custom-gray max-w-lg" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
   <ul class="list-disc pl-6">
     <li class="mb-2">Relational Database Management: Proficient in SQL and experienced with PostgreSQL.</li>
-    <li class="mb-2">Object-Oriented Software Development: Skilled in Java and C++ for building robust applications.</li>
+    <li class="mb-2">Object-Oriented Software Development: Skilled in Java and C# for building robust applications.</li>
     <li class="mb-2">Web Development &amp; UI/UX Design: Proficient in HTML, CSS, and JavaScript. Experience creating visually appealing interfaces. Familiarity with React.js and Angular.</li>
     <li class="mb-2">System Modeling: Experienced in using UML to model and represent system features and structure.</li>
     <li class="mb-2">Agile Project Management: Proficient in utilizing Jira and Scrum methodology.</li>
