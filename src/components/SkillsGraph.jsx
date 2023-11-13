@@ -32,13 +32,13 @@ const SkillsGraph = () => {
           <img src={java} alt="Java" />
           <span>Java</span>
         </div>
-        <div className="icon-container">
+        {/* <div className="icon-container">
           <img src={node} alt="JavaScript" />
           <span>Node.js</span>
-        </div>
+        </div> */}
         <div className="icon-container">
           <img src={csharp} alt="C#" />
-          <span>C++</span>
+          <span>C#</span>
         </div>
         <div className="icon-container">
           <img src={netcore} alt=".NET Core" />
