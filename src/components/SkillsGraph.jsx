@@ -3,7 +3,7 @@ import './style.css';
 import node from '../assets/node.png';
 import sql from '../assets/Postgresql.svg';
 import java from '../assets/Java_logo_PNG7.png';
-import csharp from '../assets/csharp.png';
+import csharp from '../assets/Logo_C_sharp.svg';
 import css from '../assets/css.png';
 import html from '../assets/html.png';
 import react from '../assets/react.png';
