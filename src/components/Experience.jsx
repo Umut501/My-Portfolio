@@ -8,7 +8,7 @@ const Experience = () => {
 
 
         <div className="py-20 md:w-1/2 md:pl-10">
-          <h2 className="text-4xl font-light mb-4 cursor-pointer capitalize text-custom-gray">
+          <h2 className="text-4xl font-bold mb-4 cursor-pointer capitalize text-custom-gray">
             Experience
           </h2>
           <div className="text-lg text-custom-gray max-w-lg" style={{ textAlign: 'justify', textJustify: 'distribute' }}>

@@ -13,27 +13,27 @@ function App() {
       <div> 
         <Header></Header>
 
-        <section id='section1'>
+        <section id='home'>
           <Home></Home>
         </section>
 
-        <section id='section2'>
+        <section id='about'>
           <About></About>
         </section>
 
-        <section id='section3'>
+        <section id='skills'>
           <Skills ></Skills>
         </section>
 
-        <section id='section4'>
+        <section id='experience'>
           <Experience ></Experience>
         </section>
 
-        <section id='section5'>
+        <section id='projects'>
           <Projects ></Projects>
         </section>
 
-        <section id='section6'>
+        <section id='contact'>
           <Contact ></Contact>
         </section>
 

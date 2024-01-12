@@ -111,7 +111,7 @@ backdrop-filter: blur(5px);
 }
 
 .footer-container {
-  background-color: footerbg;
+  background-color: #F5F7F8; /* Footer bg background color */
   padding: 40px;
 }
 

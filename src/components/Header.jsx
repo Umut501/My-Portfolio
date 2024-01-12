@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <div className='animate-fade-down flex justify-between items-center w-full z-40 h-20 px-4 bg-footerbg fixed  bg-opacity-40 backdrop-filter backdrop-blur-lg '>
+    <div className='animate-fade-down flex justify-between items-center w-full z-40 h-20 px-4 bg-navbarbg fixed  bg-opacity-40 backdrop-filter backdrop-blur-lg '>
         <div className='md:hidden'>
             <button className='text-3xl' onClick={toggleMenu}>
                 {showMenu ? <FaTimes /> : <FaBars />}
@@ -27,22 +27,22 @@ const Header = () => {
       <div className='hidden md:flex'>
         <ul className='flex ml-4'>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section1">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section2">About</a>
+            <a href="#about">About</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section3">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section4">Experience</a>
+            <a href="#experience">Experience</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section5">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section6">Contact</a>
+            <a href="#contact">Contact</a>
           </li>         
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
             <Resume></Resume>
@@ -79,25 +79,25 @@ const Header = () => {
       </div>
       
       {showMenu && (
-        <div className=' animate-fade-up md:hidden w-full h-screen fixed top-0 left-0 bg-footerbg'>
+        <div className=' animate-fade-up md:hidden w-full h-screen fixed top-0 left-0 bg-navbarbg'>
           <ul className='flex flex-col items-center mt-20'>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section1" onClick={closeMenu}>Home</a>
+            <a href="#home" onClick={closeMenu}>Home</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section2" onClick={closeMenu}>About</a>
+            <a href="#about" onClick={closeMenu}>About</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section3" onClick={closeMenu}>Skills</a>
+            <a href="#skills" onClick={closeMenu}>Skills</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section4" onClick={closeMenu}>Experience</a>
+            <a href="#experience" onClick={closeMenu}>Experience</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section5" onClick={closeMenu}>Projects</a>
+            <a href="#projects" onClick={closeMenu}>Projects</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
-            <a href="#section6" onClick={closeMenu}>Contact</a>
+            <a href="#contact" onClick={closeMenu}>Contact</a>
           </li>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
             <Resume></Resume>
