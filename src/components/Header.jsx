@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <div className='animate-fade-down flex justify-between items-center w-full z-40 h-20 px-4 bg-222222 fixed  bg-opacity-40 backdrop-filter backdrop-blur-lg '>
+    <div className='animate-fade-down flex justify-between items-center w-full z-40 h-20 px-4 bg-footerbg fixed  bg-opacity-40 backdrop-filter backdrop-blur-lg '>
         <div className='md:hidden'>
             <button className='text-3xl' onClick={toggleMenu}>
                 {showMenu ? <FaTimes /> : <FaBars />}
@@ -79,7 +79,7 @@ const Header = () => {
       </div>
       
       {showMenu && (
-        <div className=' animate-fade-up md:hidden w-full h-screen fixed top-0 left-0 bg-222222'>
+        <div className=' animate-fade-up md:hidden w-full h-screen fixed top-0 left-0 bg-footerbg'>
           <ul className='flex flex-col items-center mt-20'>
           <li className='text-2xl font-light px-4 cursor-pointer capitalize text-custom-gray'>
             <a href="#section1" onClick={closeMenu}>Home</a>

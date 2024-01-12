@@ -9,7 +9,7 @@ module.exports = {
         'custom-gray': '#383838',
         f2bedf: '#F2BEDF',
         F7E5F2: '#F7E5F2',
-        222222: '#9A9494',
+        footerbg: '#638889',
         D9C1A9: '#D9C1A9',
 
         colora: '#FEFCF3',
