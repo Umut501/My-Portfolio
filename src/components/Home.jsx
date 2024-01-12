@@ -9,7 +9,7 @@ const Home = () => {
     <section>
     <div className="containerbackg_property py-2" style={{ backgroundImage: `url(${parachutePhoto})`, backgroundSize: 'cover' }}>
       <div className='flex h-screen w-full md:w-auto py-4 items-center justify-center'>
-        <div className="hidden md:flex font-light absolute bottom-20 left left-32">
+        {/* <div className="hidden md:flex font-light absolute bottom-20 left left-32">
           <svg viewBox="0 0 100 100" width="100" height="100" className="mx-4 animate-spin-slow text-custom-gray">
             <defs>
               <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
@@ -20,7 +20,7 @@ const Home = () => {
               </textPath>
             </text>
           </svg>
-        </div>
+        </div> */}
 
         <h1 className='font-light whitespace-wrap text-9xl md:text-9xl text-center'>
           <span className='font-signature text-center unselectable bg-clip-text text-black'>

@@ -13,7 +13,7 @@ module.exports = {
         D9C1A9: '#D9C1A9',
 
         colora: '#FEFCF3',
-        colorb: '#FFFBEB',
+        colorb: '#E1E3E0',
         colorc: '#F5EBE0',
  
       },
