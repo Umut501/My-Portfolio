@@ -15,6 +15,7 @@ module.exports = {
         colora: '#FEFCF3',
         colorb: '#F0F0F0',
         colorc: '#F5EBE0',
+        secondb: '#F6F6F6',
  
       },
       animation: {

@@ -4,7 +4,7 @@ import SkillsGraph from "./SkillsGraph.jsx";
 
 const Skills = () =>  {
   return (
-    <section className="bg-colorb py-12">
+    <section className="bg-secondb py-12">
     <div className="container mx-auto flex flex-col md:flex-row md:items-center px-8">
     <div className="py-20 md:w-1/2">
        <SkillsGraph></SkillsGraph>
