@@ -20,7 +20,7 @@ const Home = () => {
               <span className='z-40'>welcome to my portfolio page – a glimpse into the  </span>
               <span className='text-custom-gray '> magic  </span> I create! <br />
               -<br />
-              I'm a passionate  WEB DEVELOPER  AND DESIGNER 💻
+              I'm a WEB DEVELOPER  AND DESIGNER 💻
               <br />
 
 

@@ -36,7 +36,7 @@ const About = () => {
 
               </div>
 
-              &nbsp; &nbsp;<img className='invisible xl:visible' src={arrow} />&nbsp; &nbsp;
+              &nbsp; &nbsp;<img className='invisible xl:visible'  alt="Meaningful description" src={arrow} />&nbsp; &nbsp;
               {/* credit vereceğim : https://www.figma.com/community/file/1023982676669485624 */}
 
 
@@ -57,7 +57,7 @@ const About = () => {
                   </div>
                 </div>
                 <br />
-                <img className='hidden xl:block' src={leftdownarrow} />
+                <img className='hidden xl:block'  alt="Meaningful description" src={leftdownarrow} />
                 {/* credit vereceğim : https://www.figma.com/community/file/1023982676669485624 */}
               </div>
               
