@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-  "./src/**/*.{js,jsx,ts,tsx}",
+  "./src/**/*.{js,jsx,ts,tsx}",    
+  "./components/**/*.{js,ts,jsx,tsx}",
 ],
   theme: {
    extend: {
@@ -15,6 +16,8 @@ module.exports = {
         blue:'#838dea',
         grayishwhite: '#F6F4F6',
         COLORBUTTON: "#D4DAD8",
+        red:'#D35B65',
+        greenhaze:'#029355',
  
       },
       animation: {

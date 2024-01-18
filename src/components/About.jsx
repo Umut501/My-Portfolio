@@ -26,7 +26,7 @@ const About = () => {
                     <div className="line"></div>
                     <p className="text-truncate ">
                       <p className="text-lg text-custom-gray max-w-lg px-6 py-2  " style={{ textAlign: 'justify', textJustify: 'distribute', overflow: 'hidden', whiteSpace: 'pre-wrap' }}>
-                        Hi there! I am a <i>Computer Engineer</i> and a proud graduate of Middle East Technical University. My academic journey has equipped me with a robust foundation in software design and programming, where I mastered languages like <i>Java, C, and C#</i>. Through internships and coursework, I've honed my skills in dynamic problem-solving.
+                        I am a <i>Computer Engineer</i> and a proud graduate of Middle East Technical University. My academic journey has equipped me with a robust foundation in software design and programming, where I mastered languages like <i>Java, C, and C#</i>. Through internships and coursework, I've honed my skills in dynamic problem-solving.
                         Also, I have delved into advanced <i>database management</i> courses, working with technologies such as <i>PostgreSQL, Oracle, and Microsoft SQL Server</i> to design and maintain data systems for diverse projects.
 
                       </p>
