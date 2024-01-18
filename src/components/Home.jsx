@@ -1,8 +1,5 @@
 import React from 'react';
 import './style.css'
-import { MdComputer } from "react-icons/md";
-import { IoIosColorPalette } from "react-icons/io";
-import arrowdown from '../assets/arrowdown.svg';
 const Home = () => {
 
   return (
