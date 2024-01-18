@@ -8,7 +8,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-colorb py-12">
+    <section className="bg-purple py-12">
       <div className="container mx-auto flex flex-col md:flex-row md:items-center px-8">
         <div className="md:w-1/2 md:pl-10 ">
           <div className="pb-8">
@@ -26,19 +26,19 @@ const Contact = () => {
                   type="text"
                   name="name"
                   placeholder="Enter your name"
-                  className="p-2 bg-secondb border-2 rounded-md text-black focus:outline-none"
+                  className="p-2 bg-grayishwhite border-2 rounded-md text-black focus:outline-none"
                 />
                 <input
                   type="text"
                   name="email"
                   placeholder="Enter your email"
-                  className="my-4 p-2 bg-secondb border-2 rounded-md text-black focus:outline-none"
+                  className="my-4 p-2 bg-grayishwhite border-2 rounded-md text-black focus:outline-none"
                 />
                 <textarea
                   name="message"
                   placeholder="Enter your message"
                   rows="10"
-                  className="p-2 bg-secondb border-2 rounded-md text-black focus:outline-none"
+                  className="p-2 bg-grayishwhite border-2 rounded-md text-black focus:outline-none"
                 ></textarea>
 
                 <button className="text-custom-gray border-2  bg-white px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300 focus:outline-none ">

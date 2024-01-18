@@ -6,16 +6,14 @@ module.exports = {
   theme: {
    extend: {
       colors: {
-        'custom-gray': '#000000',
-        'custom-header' : '#000000',
-        f2bedf: '#F2BEDF',
-        F7E5F2: '#F7E5F2',
+        'custom-gray': 'rgb(64, 64, 64)',
+        'custom-header' : 'rgb(64, 64, 64)',
         navbarbg: '#ECEDEF',
-        D9C1A9: '#D9C1A9',
-        colora: '#FEFCF3',
-        colorb: '#EDF6FB',
-        colorc: '#F5EBE0',
-        secondb: '#FFFFF',
+        purple: '#AE8FDB',
+        green: '#35E0AA',
+        yellow: '#FEF8B4',
+        blue:'#838dea',
+        grayishwhite: '#F6F4F6',
         COLORBUTTON: "#D4DAD8",
  
       },

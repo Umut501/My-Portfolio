@@ -1,37 +1,40 @@
 .unselectable {
-    user-select: none;
+  user-select: none;
+}
+
+.circle-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  /* Set your desired background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-text {
+  transform: rotate(-90deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .circle-container {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: white; /* Set your desired background color */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  100% {
+    transform: rotate(360deg);
   }
+}
 
-  .circle-text {
-    transform: rotate(-90deg);
-  }
+.glassy {
+  background: rgba(79, 77, 77, 0.2);
+  border-radius: 16px;
+  padding: 1%;
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-.glassy{
-background: rgba(79, 77, 77, 0.2);
-border-radius: 16px;
-padding:1%;
-
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(40px);}
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(40px);
+}
 
 .fade-down {
   animation: fadeDown 2s ease-in-out forwards;
@@ -42,51 +45,60 @@ backdrop-filter: blur(5px);
     opacity: 1;
     transform: translateY(0);
   }
+
   100% {
     opacity: 0;
     transform: translateY(50px);
   }
 }
 
-  .photo-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
-    gap: 2rem; /* Adjust the gap between photo pieces as desired */
-    transform: rotate(-2deg); /* Rotate the entire container to create diagonal lines effect */
-    overflow: hidden; /* Hide overflowing photo pieces outside the container */
-  }
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Adjust the number of columns as needed */
+  gap: 2rem;
+  /* Adjust the gap between photo pieces as desired */
+  transform: rotate(-2deg);
+  /* Rotate the entire container to create diagonal lines effect */
+  overflow: hidden;
+  /* Hide overflowing photo pieces outside the container */
+}
 
-  .photo-piece {
-    position: relative;
-    overflow: hidden;
-  }
+.photo-piece {
+  position: relative;
+  overflow: hidden;
+}
 
-  .photo-piece::before {
-    content: '';
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    width: 200%;
-    height: 200%;
-    background-image: linear-gradient(to bottom right, #000000, transparent);
-    transform: rotate(-5deg); /* Adjust the angle of the diagonal lines */
-    z-index: 1;
-  }
+.photo-piece::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background-image: linear-gradient(to bottom right, #000000, transparent);
+  transform: rotate(-5deg);
+  /* Adjust the angle of the diagonal lines */
+  z-index: 1;
+}
 
-  .photo-piece img {
-    width: 100%;
-    display: block;
-    z-index: 2;
-  }
-  .backg_property {
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-  }
-  .parallax img {
+.photo-piece img {
+  width: 100%;
+  display: block;
+  z-index: 2;
+}
+
+.backg_property {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.parallax img {
   position: absolute;
   pointer-events: none;
 }
+
 .icon-container {
   display: flex;
   flex-direction: column;
@@ -94,34 +106,174 @@ backdrop-filter: blur(5px);
 }
 
 .icon-container img {
-  width: 64px; /* Adjust the width as needed */
-  height: 64px; /* Adjust the height as needed */
+  width: 64px;
+  /* Adjust the width as needed */
+  height: 64px;
+  /* Adjust the height as needed */
 }
 
 .icon-container span {
-  margin-top: 8px; /* Adjust the margin as needed */
-  font-size: 14px; /* Adjust the font size as needed */
+  margin-top: 8px;
+  /* Adjust the margin as needed */
+  font-size: 14px;
+  /* Adjust the font size as needed */
   text-align: center;
 }
+
 .icon-row {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Adjust the gap as needed */
-  margin-bottom: 20px; /* Adjust the margin as needed */
+  gap: 20px;
+  /* Adjust the gap as needed */
+  margin-bottom: 20px;
+  /* Adjust the margin as needed */
 }
 
 .footer-container {
-  background-color: #F5F7F8; /* Footer bg background color */
+  background-color: #F5F7F8;
+  /* Footer bg background color */
   padding: 40px;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 
 .footer-text {
   font-size: 20px;
   color: #383838;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.top-left {
+  position: absolute;
+  top: 20%;
+  left: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #383838;
+  background-color: #F6F4F6;
+
+}
+
+#background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+}
+
+#content {
+  position: relative;
+  z-index: 2;
+}
+
+
+.signature {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+}
+
+.bella {
+  font-family: 'BELLA SOPHIE Regular';
+  font-weight: 100;
+}
+
+.line {
+  width: 100%;
+  /* Kutunun genişliği kadar uzunluk */
+  height: 2px;
+  /* Çizgi kalınlığı */
+  background-color: rgb(64, 64, 64);
+  /* Çizgi rengi */
+  margin-top: 1%;
+  /* İhtiyaca göre çizgi ile kutu arasındaki boşluk */
+}
+
+.circle {
+  width: 16px;
+  /* Adjust the size of the circles as needed */
+  height: 16px;
+  background-color: rgb(64, 64, 64);
+  /* Çizgi rengi */
+  border-radius: 50%;
+  margin-right: 4px;
+  /* Adjust the spacing between the circles if needed */
+  margin-left: 5px;
+  /* Adjust the spacing between the circles if needed */
+}
+
+.circle_empty {
+  margin: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+}
+
+.line_empty {
+  margin: 0;
+  padding-top: 1%;
+}
+
+.close_sign {
+  font-size: 16px;
+  color: rgb(64, 64, 64);
+  cursor: pointer;
+  margin-left: auto;
+  /* This will push the close_sign to the right */
+  padding-right: 5%;
+}
+
+
+/* style.css */
+
+
+.text-container {
+  padding: 32px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .text-container {
+    padding: 16px;
+    /* Adjust padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 4rem;
+    /* Adjust font size for smaller screens */
+  }
+
+  .text-9xl {
+    font-size: 3rem;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+.containerasd {
+  right: 0;
+  background-color: #AE8FDB;
+  z-index: 100;
+}
+
+.hover-text {
+  cursor: pointer;
+}
+
+.hidden-image {
+  display: none;
 }

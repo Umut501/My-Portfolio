@@ -1,44 +1,48 @@
 import React from 'react';
 import './style.css'
-import parachutePhoto from '../assets/minh-pham-IisDPFNUS4k-unsplash.jpg';
-
+import { MdComputer } from "react-icons/md";
+import { IoIosColorPalette } from "react-icons/io";
+import arrowdown from '../assets/arrowdown.svg';
 const Home = () => {
-  
-  return (
-    
-    <section>
-    <div className="containerbackg_property py-2" style={{ backgroundImage: `url(${parachutePhoto})`, backgroundSize: 'cover' }}>
-      <div className='flex h-screen w-full md:w-auto py-4 items-center justify-center'>
-       
-        <div className="hidden md:flex font-light absolute bottom-20">
-          <svg viewBox="0 0 100 100" width="100" height="100" className="mx-4 animate-spin-slow text-custom-gray">
-            <defs>
-              <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
-            </defs>
-            <text fontSize={18}>
-              <textPath href="#circle " >
-                <tspan dy="0">Let's get creative & inspiring!</tspan>
-              </textPath>
-            </text>
-          </svg>
-        </div>
 
-        <h1 className='font-light whitespace-wrap text-9xl md:text-9xl text-center'>
-          <span className='font-signature text-center unselectable bg-clip-text text-black'>
-            Umut Baybece<br />
-          </span>
-          <div className="container mx-auto py-4">
-            <h2 className="text-4xl mb-2 text-custom-gray pt-10 px-5">
-              <span className='opacity-0 unselectable'>|</span>
-              Developer/Designer
-            </h2>
+  return (
+
+    <section>
+      <div className="bg-purple" >
+        <div className='flex w-full md:w-auto py-4  items-center justify-center'>
+
+          <div className='pointer-events-none py-32 px-32 whitespace-wrap text-9xl md:text-6xl text-left'>
+            <span className='text-9xl mb-4 cursor-pointer capitalize text-grayishwhite text-custom-header  bella'>
+              <span className='text-4xl signature before:block before:absolute before:-inset-6 before:-skew-y-3 before:bg-custom-gray relative inline-block'>
+                <span class="relative text-white">👋Hi I'm Umut</span>       <br />
+              </span>
+              <br />
+              <span className='z-40'>welcome to my portfolio page – a glimpse into the  </span>
+              <span className='text-custom-gray '> magic  </span> I create! <br />
+              -<br />
+              I'm a passionate  WEB DEVELOPER  AND DESIGNER 💻
+              <br />
+
+
+
+            </span>
+
+            <span className='text-9xl mb-4 cursor-pointer capitalize text-  text-custom-header  bella'>
+              <br />
+            </span>
+
+            <br />
           </div>
-        </h1>
+        </div>
       </div>
-    </div>
-  </section>
+
+      <style>
+
+      </style>
+    </section>
+
   );
-  
+
 };
 
 export default Home;

@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <body>
+    <body >
       <div> 
         <Header></Header>
 
@@ -40,9 +40,6 @@ function App() {
         <section id='section'>
           <Footer ></Footer>
         </section>
-
-        
-
 
       </div>
     </body>

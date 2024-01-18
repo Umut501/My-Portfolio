@@ -18,10 +18,10 @@ import tailwind from '../assets/tailwind.png';
 const SkillsGraph = () => {
     
   return (
-    <section className="bg-secondb py-12 container">
+    <section className="bg-yellow py-12 container">
       
 
-<div className="graph">
+<div className="graph text-custom-gray">
       <div className="icon-row">
         <div className="icon-container">
           <img src={sql} alt="PostgreSQL" />

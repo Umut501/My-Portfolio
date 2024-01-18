@@ -1,47 +1,99 @@
-import MyPhoto from '../assets/myImg.png';
 import React from 'react';
 import './style.css'
+import arrow from '../assets/arrow.svg';
+import leftdownarrow from '../assets/leftdownarrow.svg';
 
 const About = () => {
   return (
-    <section className="bg-colorb py-12">
-    <div className="container mx-auto flex flex-col md:flex-row md:items-center px-8">
-    <div className="py-20 md:w-1/2 md:pl-10">
-  <h2 className="text-4xl font-bold mb-4 cursor-pointer capitalize text-custom-header">
-    About Me
-  </h2>
-  <p className="text-lg text-custom-gray max-w-lg" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
-    Hi there! I am a highly motivated Computer Engineer, proud graduate of Middle East Technical University. My academic journey equipped me with a strong foundation in <b>software design</b> and <b>programming</b>, mastering languages such as Java, C, and C#. I've gained practical experience through internships, work-life, and coursework, honing my skills in dynamic problem-solving.
-    <br /><br />
-    Advanced <b>database management</b> courses have been part of my journey, where I worked with technologies like PostgreSQL, Oracle, and Microsoft SQL Server to design and maintain data systems for diverse projects.
-  </p>
-  <br />
-  <p className="text-lg text-custom-gray max-w-lg" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
-    Beyond my academic achievements, my professional role as a Software Developer at KOD YAZILIM PROJE HİZ. TUR. TİC. A.Ş. focuses on web application development. I specialize in utilizing technologies like ASP.NET Core, Angular, and PostgreSQL to create pages and services for ERP management, ensuring optimal functionality and a user-friendly interface.
-  </p>
-  <br /><br />
-  <p className="text-lg text-custom-gray max-w-lg" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
-    Passionate about innovation, I have a keen interest in <b>image processing</b> and <b>computer vision</b>. My practical skills include implementing algorithms for image enhancement, feature extraction, and object recognition.
-  </p>
-  <br /><br />
-  <p className="text-lg text-custom-gray max-w-lg" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
-    In addition to my technical prowess, I thrive in <b>agile development</b> environments. Collaborating seamlessly with cross-functional teams using tools like Jira Software is second nature to me. Known for quick learning abilities and adaptability to new technologies, I am always eager to tackle challenging problems and contribute to innovative solutions.
-  </p>
-  <p className="text-lg text-custom-gray max-w-lg" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
-    Feel free to <b>contact</b> me at <b><a href="mailto:umutbaybece@gmail.com">umutbaybece@gmail.com</a></b> for any inquiries, collaborations, or exciting opportunities. Let's build something amazing together!
-  </p>
-</div>
+    <section className="bg-green py-12 relative flex flex-col items-center ">
+      <div className="container mx-auto flex flex-col md:flex-row md:items-center justify-center px-8 tracking-wide ">
+        <div className="py-20  ">
+          <h2 className="bella pointer-events-none text-9xl font-bold mb-4 cursor-pointer capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
+            About Me.
+          </h2>
+          <br />
+          <b>
+          <div class="px-2">
+            <div class="flex flex-wrap -mx-2">
+              <div class="w-full xl:w-1/3 mb-4">
+                <div className="flex items-center justify-center relative">
+                  <div className="max-w-md line_empty w-full py-6 bg-grayishwhite rounded-[1.5rem] border-2 border-custom-gray relative">
+                    <div className="flex circle_empty">
+                      <div className="circle"></div>
+                      <div className="circle"></div>
+                      <div className="circle"></div>
+                    </div>
+                    <div className="line"></div>
+                    <p className="text-truncate ">
+                      <p className="text-lg text-custom-gray max-w-lg px-6 py-2  " style={{ textAlign: 'justify', textJustify: 'distribute', overflow: 'hidden', whiteSpace: 'pre-wrap' }}>
+                        Hi there! I am a <i>Computer Engineer</i> and a proud graduate of Middle East Technical University. My academic journey has equipped me with a robust foundation in software design and programming, where I mastered languages like <i>Java, C, and C#</i>. Through internships and coursework, I've honed my skills in dynamic problem-solving.
+                        Also, I have delved into advanced <i>database management</i> courses, working with technologies such as <i>PostgreSQL, Oracle, and Microsoft SQL Server</i> to design and maintain data systems for diverse projects.
+
+                      </p>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              &nbsp; &nbsp;<img className='invisible xl:visible' src={arrow} />&nbsp; &nbsp;
+              {/* credit vereceğim : https://www.figma.com/community/file/1023982676669485624 */}
 
 
-      <div className="py-20 md:w-1/2">
-        <img src={MyPhoto} alt='umutphoto' className="mx-auto w-80 rounded-full mb-4 mt-10" />
-      </div>
-    </div>
+              <div class="w-full xl:w-1/3 mb-4">
+                <div className="flex items-center justify-center relative">
+                  <div className="max-w-md line_empty w-full py-6 bg-grayishwhite rounded-[1.5rem] border-2 border-custom-gray relative">
+                    <div className="flex circle_empty">
+                      <div className="circle"></div>
+                      <div className="circle"></div>
+                      <div className="circle"></div>
+                    </div>
+                    <div className="line"></div>
+                    <p className="text-truncate">
+                      <p className="text-lg text-custom-gray max-w-lg px-6 py-2 " style={{ textAlign: 'justify', textJustify: 'distribute', overflow: 'hidden', whiteSpace: 'pre-wrap' }}>
+                        Beyond my academic achievements, my professional role as a Software Developer at KOD YAZILIM PROJE HİZ. TUR. TİC. A.Ş. focuses on <i>web application development</i>. I specialize in utilizing technologies like <i>ASP.NET Core, Angular, and PostgreSQL</i> to create pages and services for ERP management, ensuring optimal functionality and a user-friendly interface.
+                      </p>
+                    </p>
+                  </div>
+                </div>
+                <br />
+                <img className='hidden xl:block' src={leftdownarrow} />
+                {/* credit vereceğim : https://www.figma.com/community/file/1023982676669485624 */}
+              </div>
+              
+              <div class="w-full xl:w-1/3  mb-4"></div>
+              
+              <div class="w-full xl:w-1/3  mb-4">
+                <div className="flex items-center justify-center relative">
+                  <div className="max-w-md line_empty w-full py-6 bg-grayishwhite rounded-[1.5rem] border-2 border-custom-gray relative">
+                    <div className="flex circle_empty">
+                      <div className="circle"></div>
+                      <div className="circle"></div>
+                      <div className="circle"></div>
+                    </div>
+                    <div className="line"></div>
+                    <p className="text-truncate">
+                      <p className="text-lg text-custom-gray max-w-lg px-6 py-2 " style={{ textAlign: 'justify', textJustify: 'distribute', overflow: 'hidden', whiteSpace: 'pre-wrap' }}>
+
+                        I thrive in <i>agile development environments</i> and collaborate seamlessly with cross-functional teams using tools like <i>Jira Software</i>. Known for quick learning abilities and adaptability to new technologies, I am always eager to tackle challenging problems and contribute to innovative solutions.
+                      </p>
+                      <p className="text-lg text-custom-gray max-w-lg px-6 py-2 " style={{ textAlign: 'justify', textJustify: 'distribute', overflow: 'hidden', whiteSpace: 'pre-wrap' }}>
+
+                        Feel free to <i>contact</i> me at <i><a href="mailto:umutbaybece@gmail.com">umutbaybece@gmail.com</a></i> for any inquiries, collaborations, or exciting opportunities. Let's build something amazing together!
+                      </p>
+                    </p>
+                  </div>
+                </div>
+              </div>
 
 
-  </section>
+            </div>
+          </div>
+          </b>
+        </div></div>
+    </section>
   );
-  
+
 };
 
 export default About;
