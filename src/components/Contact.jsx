@@ -9,10 +9,10 @@ const Contact = () => {
 
   return (
     <section className="bg-purple py-12">
-      <div className="container mx-auto flex flex-col md:flex-row md:items-center px-8">
+      <div className="container mx-auto flex flex-col md:flex-row md:items-center cursor-none px-8">
         <div className="md:w-1/2 md:pl-10 ">
           <div className="pb-8">
-          <h2 className="bella pointer-events-none text-6xl font-bold mb-4 cursor-pointer capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
+          <h2 className="bella text-6xl font-bold mb-4 capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
               Let's Get In Touch
             </h2>
             <div className="mt-8 flex justify-center items-center">
@@ -51,7 +51,7 @@ const Contact = () => {
 
         <div className="md:w-1/2 md:pl-10 flex justify-center items-center">
           <div className="pb-8">
-          <h3 className="bella pointer-events-none text-6xl font-bold mb-4 cursor-pointer capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
+          <h3 className="bella pointer-events-none text-6xl font-bold mb-4 capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
               Contact Info
               <br />
             </h3>

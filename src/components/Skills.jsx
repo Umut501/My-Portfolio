@@ -10,7 +10,7 @@ const Skills = () =>  {
        <SkillsGraph></SkillsGraph>
       </div>
       <div className="py-20 md:w-1/2 md:pl-10">
-        <h2 className="text-9xl font-bold mb-4 cursor-pointer capitalize text-custom-gray bella "style={{ textAlign: 'justify', textJustify: 'distribute' }}>
+        <h2 className="text-9xl font-bold mb-4 cursor-none capitalize text-custom-gray bella "style={{ textAlign: 'justify', textJustify: 'distribute' }}>
           Skill Set
         </h2>
         

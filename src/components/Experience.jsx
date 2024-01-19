@@ -9,7 +9,7 @@ const Experience = () => {
 
 
         <div className="py-20 md:w-1/2 md:pl-10">
-        <h2 className="bella pointer-events-none text-9xl font-bold mb-4 cursor-pointer capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
+        <h2 className="bella text-9xl font-bold mb-4 cursor-none capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
 
             Experience
           </h2>

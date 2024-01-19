@@ -21,7 +21,7 @@ const SkillsGraph = () => {
     <section className="bg-yellow py-12 container">
       
 
-<div className="graph text-custom-gray">
+<div className="graph text-custom-gray cursor-none">
       <div className="icon-row">
         <div className="icon-container">
           <img src={sql} alt="PostgreSQL" />

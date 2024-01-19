@@ -6,17 +6,27 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import AnimatedCursor from "react-animated-cursor";
 
-function App() {
+function App() { 
+
   return (
-    <body >
-      <div> 
-        <Header></Header>
+    <body>
+      <AnimatedCursor
+        innerSize={20}
+        outerSize={30}
+        color='64,64,64'
+        outerAlpha={0.5}
+        innerScale={0.6}
+        outerScale={1}
 
+      />
+      <div >
+        <Header></Header>
         <section id='home'>
           <Home></Home>
         </section>
-
+ 
         <section id='about'>
           <About></About>
         </section>
@@ -42,8 +52,9 @@ function App() {
         </section>
 
       </div>
+
     </body>
-    
+
   );
 }
 
