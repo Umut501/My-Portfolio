@@ -5,10 +5,10 @@ import '../assets/Seth Godin.png';
 
 const Home = () => {
   return (
-    <section className="bg-purple cursor-none cd-intro">
+    <section className="flex flex-col bg-purple cursor-none cd-intro">
       {/* Navigation links */}
-      <div className='flex flex-col items-center md:flex-row justify-end p-4'>
-        <a href="#" className="text-white px-4">Home</a>
+      <div className='flex flex-col items-center md:flex-row whitespace-nowrap  justify-end p-4'>
+        <a href="#home" className="text-white px-4">Home</a>
         <a href="#about" className="text-white px-4">About</a>
         <a href="#skills" className="text-white px-4">Skills</a>
         <a href="#experience" className="text-white px-4">Experience</a>
