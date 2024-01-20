@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
 import About from "./components/About";
