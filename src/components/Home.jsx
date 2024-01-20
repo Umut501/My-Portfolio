@@ -3,7 +3,6 @@ import React from 'react';
 import './style.css';
 import '../assets/Seth Godin.png';
 import cngguy from '../assets/cngguy.svg';
-import arrow from '../assets/arrow.svg';
 import arrowstraightdown from '../assets/arrowstraightdown.svg';
 
 const Home = () => {
