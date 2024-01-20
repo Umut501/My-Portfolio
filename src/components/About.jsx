@@ -6,7 +6,7 @@ import leftdownarrow from '../assets/leftdownarrow.svg';
 const About = () => {
   return (
     
-    <section className="bg-green py-12 relative flex flex-col items-center ">
+    <section className="bg-purple py-12 relative flex flex-col items-center ">
       <div className="container mx-auto flex flex-col md:flex-row md:items-center justify-center px-8 tracking-wide ">
         <div className="py-20  ">
           <h2 className="bella text-9xl font-bold mb-4 cursor-none capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>

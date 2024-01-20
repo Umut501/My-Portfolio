@@ -7,28 +7,17 @@ import arrowstraightdown from '../assets/arrowstraightdown.svg';
 
 const Home = () => {
   return (
-    <section className="flex flex-col bg-purple cursor-none cd-intro">
-      {/* Navigation links */}
-      <div className='flex flex-col items-end md:flex-row whitespace-nowrap justify-start p-4'>
-        <a href="#home" className="text-white px-4">Home</a>
-        <a href="#about" className="text-white px-4">About</a>
-        <a href="#skills" className="text-white px-4">Skills</a>
-        <a href="#experience" className="text-white px-4">Experience</a>
-        <a href="#projects" className="text-white px-4">Projects</a>
-        <a href="#contact" className="text-white px-4">Contact</a>
-        <a href="#download" className="text-white px-4">Download CV</a>
-      </div>
-
-      <div className='flex flex-row'>
+    <section className="flex flex-col bg-white cursor-none cd-intro">
+      <div className='py-20 flex flex-row'>
         {/* Content */}
         <div className='flex flex-col items-right top-0 p-4 cd-intro-content bouncy'>
           <div className=' md:py-4 px-4 md:px-32 text-left'>
-            <span className='text-xl mb-4 capitalize text-custom-gray text-custom-header bella'>
+            <span className='text-2xl mb-4 capitalize text-custom-gray text-custom-header bella'>
               <span className='whitespace-nowrap text-2xl signature before:block before:absolute before:-inset-6 before:-skew-y-3 relative inline-block'>
-                <span className="relative text-xl text-white">👋Hi I'm Umut </span> <br /><br />
+                <span className="relative text-xl text-custom-gray">👋Hi I'm Umut </span> <br /><br />
               </span>
               <br />
-              <div className="keyboard whitespace-nowrap text-9xl">
+              <div className="px-4 keyboard whitespace-nowrap text-9xl">
                 I'm a&nbsp;
                 <span className='textoutline text-purple whitespace-nowrap'>
                   <span className="kdey">D</span>
@@ -42,22 +31,30 @@ const Home = () => {
                 </span>
                 <span className='Rubik text-xl'><b> &</b></span>
               </div>
-              <span className='text-9xl'>Developer</span><br /><img className='hidden xl:block px-20' alt="Meaningful description" src={arrowstraightdown} />
-
-              <div className='invisible md:visible w-9/12 flex justify-start items-center p-4'>
-                <img src={cngguy} alt="cngguy" className='w-full' />
-                {/* https://www.streamlinehq.com/ bu siteyi vereceğim credit olarak yeterli */}
-              </div>
-
+              <span className='px-4 text-9xl'>Developer</span><br />
+              <br />
+      {/* Navigation links */}
+      <div className='flex flex-col items-start md:flex-row whitespace-nowrap justify-start'>
+        <a href="#home" className="text-custom-gray px-4 ">Home</a>
+        <a href="#about" className="text-custom-gray px-4">About</a>
+        <a href="#skills" className="text-custom-gray px-4">Skills</a>
+        <a href="#experience" className="text-custom-gray px-4">Experience</a>
+        <a href="#projects" className="text-custom-gray px-4">Projects</a>
+        <a href="#contact" className="text-custom-gray px-4">Contact</a>
+        <a href="#download" className="text-custom-gray px-4">Resume</a>
+      </div>
 
             </span>
           </div>
+
+
         </div>
 
-
-        {/* Cngguy Image */}
-        <div className='invisible py-10 xl:visible flex justify-start items-center'>
-          <img src={require('../assets/Seth Godin.png')} alt="Seth Godin" className='w-12/12' />  </div>
+        {/* Cngguy Image */}   <div className='invisible md:visible bg-white w-9/12 flex left-0 justify-start items-center'>
+                <img src={cngguy} alt="cngguy" className='w-full' />
+                {/* https://www.streamlinehq.com/ bu siteyi vereceğim credit olarak yeterli */}
+              </div>
+          {/* <img src={require('../assets/Seth Godin.png')} alt="Seth Godin" className='w-12/12' /> */}
 
       </div>
       {/* Copyright (c) 2024 by Juxtopposed (https://codepen.io/Juxtopposed/pen/OJrLZvb)
