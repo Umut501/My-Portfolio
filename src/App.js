@@ -22,7 +22,7 @@ function App() {
 
       />
       <div >
-        <Header></Header>
+        {/* <Header></Header> */}
         <section id='home'>
           <Home></Home>
         </section>
