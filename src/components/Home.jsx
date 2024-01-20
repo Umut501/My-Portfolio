@@ -41,7 +41,7 @@ const Home = () => {
               <span className='Rubik text-xl'><b> &</b></span>
             </div>
             <span className='text-9xl'>Developer</span>
-            <img src={require('../assets/Seth Godin.png')} alt="Seth Godin" 
+            <img src={require('../assets/Seth Godin.png')}
         className='w-5/12'/>
           </span>
         </div>
