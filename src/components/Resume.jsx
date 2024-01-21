@@ -10,11 +10,10 @@ const Resume = () => {
 
   return (
     <div>
-      <button
-        className="text-black font-bold"
+      <button className="text-custom-gray px-4"
         onClick={handleDownload}
       >
-        Download Resume
+        Resume
       </button>
     </div>
   );

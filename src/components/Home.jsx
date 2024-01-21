@@ -3,11 +3,13 @@ import React from 'react';
 import './style.css';
 import '../assets/Seth Godin.png';
 import cngguy from '../assets/cngguy.svg';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import Resume from '../components/Resume';
 
 const Home = () => {
   return (
     <section className="flex flex-col bg-white cursor-none cd-intro">
-      <div className='py-20 flex flex-row'>
+      <div className='py-28 pb-32 flex flex-row'>
         {/* Content */}
         <div className='flex flex-col items-right top-0 p-4 cd-intro-content bouncy'>
           <div className=' md:py-4 px-4 md:px-32 text-left'>
@@ -32,17 +34,23 @@ const Home = () => {
               </div>
               <span className='px-4 text-9xl'>Developer</span><br />
               <br />
-      {/* Navigation links */}
-      <div className='flex flex-col items-start md:flex-row whitespace-nowrap justify-start'>
-        <a href="#home" className="text-custom-gray px-4 ">Home</a>
-        <a href="#about" className="text-custom-gray px-4">About</a>
-        <a href="#skills" className="text-custom-gray px-4">Skills</a>
-        <a href="#experience" className="text-custom-gray px-4">Experience</a>
-        <a href="#projects" className="text-custom-gray px-4">Projects</a>
-        <a href="#contact" className="text-custom-gray px-4">Contact</a>
-        <a href="#download" className="text-custom-gray px-4">Resume</a>
-      </div>
-
+              {/* Navigation links */}
+              <div className='flex flex-col items-start md:flex-row whitespace-nowrap justify-start'>
+                <a href="#home" className="text-custom-gray px-4 ">Home</a>
+                <a href="#about" className="text-custom-gray px-4">About</a>
+                <a href="#skills" className="text-custom-gray px-4">Skills</a>
+                <a href="#experience" className="text-custom-gray px-4">Experience</a>
+                <a href="#projects" className="text-custom-gray px-4">Projects</a>
+                <a href="#contact" className="text-custom-gray px-4">Contact</a>
+                <Resume></Resume> <span className='invisible md:visible'>|</span>
+                <a href='https://github.com/Umut501' target="_blank" rel="noopener noreferrer" className="text-custom-gray px-4 ">
+                  <FaGithub />
+                </a>
+                <a href='https://www.linkedin.com/in/umut-baybece-6a1303201/' target="_blank" rel="noopener noreferrer" className="text-custom-gray px-4 ">
+                  <FaLinkedin />
+                </a>
+              </div>
+              <br />
             </span>
           </div>
 
@@ -50,10 +58,10 @@ const Home = () => {
         </div>
 
         {/* Cngguy Image */}   <div className='invisible md:visible bg-white w-9/12 flex left-0 justify-start items-center'>
-                <img src={cngguy} alt="cngguy" className='w-full' />
-                {/* https://www.streamlinehq.com/ bu siteyi vereceğim credit olarak yeterli */}
-              </div>
-          {/* <img src={require('../assets/Seth Godin.png')} alt="Seth Godin" className='w-12/12' /> */}
+          <img src={cngguy} alt="cngguy" className='w-full' />
+          {/* https://www.streamlinehq.com/ bu siteyi vereceğim credit olarak yeterli */}
+        </div>
+        {/* <img src={require('../assets/Seth Godin.png')} alt="Seth Godin" className='w-12/12' /> */}
 
       </div>
       {/* Copyright (c) 2024 by Juxtopposed (https://codepen.io/Juxtopposed/pen/OJrLZvb)
