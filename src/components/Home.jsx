@@ -9,16 +9,16 @@ import Resume from '../components/Resume';
 const Home = () => {
   return (
     <section className="flex flex-col bg-white cursor-none cd-intro">
-      <div className='py-28 pb-32 flex flex-row'>
+      <div className='py-28 pb-36 flex'>
         {/* Content */}
-        <div className='flex flex-col items-right top-0 p-4 cd-intro-content bouncy'>
-          <div className=' md:py-4 px-4 md:px-32 text-left'>
+        <div className='flex flex-col items-right top-0 cd-intro-content bouncy'>
+          <div className=' md:py-4 md:px-32 text-left'>
             <span className='text-2xl mb-4 capitalize text-custom-gray text-custom-header bella'>
               <span className='whitespace-nowrap text-2xl signature before:block before:absolute before:-inset-6 before:-skew-y-3 relative inline-block'>
                 <span className="relative text-xl text-custom-gray">👋Hi I'm Umut </span> <br /><br />
               </span>
               <br />
-              <div className="px-4 keyboard whitespace-nowrap text-9xl">
+              <div className="whitespace-nowrap text-9xl">
                 I'm a&nbsp;
                 <span className='textoutline text-purple whitespace-nowrap'>
                   <span className="kdey">D</span>
@@ -57,8 +57,8 @@ const Home = () => {
 
         </div>
 
-        {/* Cngguy Image */}   <div className='invisible md:visible bg-white w-9/12 flex left-0 justify-start items-center'>
-          <img src={cngguy} alt="cngguy" className='w-full' />
+        {/* Cngguy Image */}   <div className='invisible md:visible bg-white w-full flex left-10 justify-start items-center'>
+          <img src={cngguy} alt="cngguy" className='w-full px-4' />
           {/* https://www.streamlinehq.com/ bu siteyi vereceğim credit olarak yeterli */}
         </div>
         {/* <img src={require('../assets/Seth Godin.png')} alt="Seth Godin" className='w-12/12' /> */}
