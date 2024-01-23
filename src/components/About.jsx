@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css'
 import arrow from '../assets/arrow.svg';
 import leftdownarrow from '../assets/leftdownarrow.svg';
-import myphoto from '../assets/myphoto.jpg';
+import myphoto from '../assets/myphoto.png';
 
 const About = () => {
   return (
