@@ -533,3 +533,38 @@ body {
     transform: perspective(800px) rotateX(0);
   }
 }
+
+
+a.ex2 {
+  font-size: 100%; /* Set the default font size */
+  display: inline-block; /* Ensures that the element respects its own width and height */
+  transition: transform 0.3s ease; /* Add a transition for the transform property */
+}
+
+a.ex2:hover, a.ex2:active {
+  text-decoration: underline;
+  transform: scale(1.2); /* Increase the size on hover and active states */
+}
+
+button.ex2 {
+  font-size: 100%; /* Set the default font size */
+  display: inline-block; /* Ensures that the element respects its own width and height */
+  transition: transform 0.3s ease; /* Add a transition for the transform property */
+}
+
+button.ex2:hover, button.ex2:active {
+  text-decoration: underline;
+  transform: scale(1.2); /* Increase the size on hover and active states */
+}
+
+/* Rotate */
+img.rt {
+	-webkit-transform: rotate(-15deg) scale(1);
+	transform: rotate(-15deg) scale(1.50);
+	-webkit-transition: .3s ease-in-out;
+	transition: .8s ease-in-out;
+}
+img.rt:hover, img.rt:focus, img.rt:active {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}

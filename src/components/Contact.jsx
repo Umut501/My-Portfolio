@@ -15,7 +15,7 @@ const Contact = () => {
           <h2 className="bella text-6xl font-bold mb-4 capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
               Let's Get In Touch
             </h2>
-            <div className="mt-8 flex justify-center items-center">
+            <div className="mt-8 text-left flex justify-center items-center">
               <form
                 action="https://getform.io/f/b6f12f06-f3b8-4892-a38a-d896d6c9e77b"
                 method="POST"
@@ -50,7 +50,7 @@ const Contact = () => {
         </div>
 
         <div className="md:w-1/2 md:pl-10 flex justify-center items-center">
-          <div className="pb-8">
+          <div className="text-left pb-8">
           <h3 className="bella pointer-events-none text-6xl font-bold mb-4 capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
               Contact Info
               <br />

@@ -10,7 +10,7 @@ const Resume = () => {
 
   return (
     <div>
-      <button className="text-custom-gray px-4"
+      <button className="text-custom-gray pr-4 ex2 tracking-wider"
         onClick={handleDownload}
       >
         Resume
