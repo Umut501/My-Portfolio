@@ -2,26 +2,22 @@ import React from 'react';
 import './style.css'
 import arrow from '../assets/arrow.svg';
 import leftdownarrow from '../assets/leftdownarrow.svg';
-import myphoto from '../assets/myphoto.png';
+
 
 const About = () => {
   return (
     
-    <section className="bg-purple py-12 relative flex flex-col items-center pl-16 md:pl-0 ">
+    <section className="bg-white py-12 relative flex flex-col items-center pl-16 md:pl-0 ">
       <div className="container mx-auto flex flex-col md:flex-row md:items-center justify-center px-8 tracking-wide ">
-        <div className=" py-12 ">
+        <div className=" py-0">
           <div className='flex flex-wrap -mx-2'>
           <div class="w-full xl:w-1/2  mb-4">    
           <h2 className="bella md:pl-32 text-9xl font-bold mb-4 cursor-none capitalize text-custom-header" style={{ textAlign: 'justify', textJustify: 'distribute' }}>
             About Me.<br /><br />
           </h2>
           </div>
-          <div class="w-full xl:w-1/2 mb-20"> 
-          <img className='w-4/12 rt md:pl-32 invisible md:visible'  alt="myphoto" src={myphoto} />
-          </div>
-          </div>
-       
 
+          </div>
         
           <b>
           <div class="px-2 md:pl-32">

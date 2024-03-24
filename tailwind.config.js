@@ -18,6 +18,7 @@ module.exports = {
         COLORBUTTON: "#D4DAD8",
         red:'#D35B65',
         greenhaze:'#029355',
+        darkbg:'#0F0F0F',
  
       },
       animation: {

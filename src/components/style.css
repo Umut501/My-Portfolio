@@ -558,13 +558,115 @@ button.ex2:hover, button.ex2:active {
 }
 
 /* Rotate */
-img.rt {
-	-webkit-transform: rotate(-15deg) scale(1);
-	transform: rotate(-15deg) scale(1.50);
-	-webkit-transition: .3s ease-in-out;
-	transition: .8s ease-in-out;
+
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
 }
-img.rt:hover, img.rt:focus, img.rt:active {
-	-webkit-transform: rotate(0) scale(1);
-	transform: rotate(0) scale(1);
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 1s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.marquee p {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.chess-row {
+  display: flex;
+  width: 100px; /* Adjusted to accommodate skew */
+}
+
+.chess-row::before, .chess-row::after {
+  content: "";
+  display: inline-block;
+  width: 50px; /* Square size */
+  height: 50px; /* Square size */
+  transform: skewX(10deg); /* Skew to right */
+}
+
+.chess-row::before {
+  background-color: black;
+}
+
+.chess-row::after {
+  background-color: #FEF8B4;
+}
+
+/* Alternate colors for even rows */
+.chess-row:nth-child(even)::before {
+  background-color: #FEF8B4;
+}
+
+.chess-row:nth-child(even)::after {
+  background-color: black;
+}
+
+/* Adjusting alignment due to skew */
+.chess-row {
+  margin-bottom: -10px; /* Adjust based on visual preference */
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }

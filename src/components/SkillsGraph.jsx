@@ -18,7 +18,7 @@ import tailwind from '../assets/tailwind.png';
 const SkillsGraph = () => {
     
   return (
-    <section className="bg-yellow py-12 container">
+    <section className="bg-white py-12 container">
       
 
 <div className="graph text-custom-gray cursor-none">

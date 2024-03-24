@@ -8,7 +8,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-purple py-12">
+    <section className="bg-white py-12">
       <div className="container mx-auto flex flex-col md:flex-row md:items-center cursor-none px-8">
         <div className="md:w-1/2 md:pl-10 ">
           <div className="pb-8">

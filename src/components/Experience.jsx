@@ -3,7 +3,7 @@ import './style.css'
 
 const Experience = () => {
   return (
-    <section className="bg-green py-12">
+    <section className="bg-white py-12">
              <b>
       <div className="container mx-auto flex flex-col md:flex-row md:items-center px-8">
 
